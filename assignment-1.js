@@ -6,5 +6,4 @@ function multiplicationTable(num) {
 
 }
 
-multiplicationTable(9);
-//done
+multiplicationTable(5);
