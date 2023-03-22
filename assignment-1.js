@@ -7,3 +7,4 @@ function multiplicationTable(num) {
 }
 
 multiplicationTable(9);
+//done
