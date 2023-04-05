@@ -1,2 +1,17 @@
 Assignment 3 project URL: 
 https://fanciful-seahorse-3fa74c.netlify.app/
+
+
+Description: Firstly I created a function by name "updateClock()". The function begins by getting a reference to the HTML element that displays the clock, which has an id of "digitalClock". It then creates a new Date object representing the current time.
+
+Next, it extracts the current hours, minutes, and seconds from the Date object and stores them in separate variables. The function also initializes a variable called "amOrPm" to an empty string.
+
+The function then checks if the current hour is greater than or equal to 12. If it is, then it sets the amOrPm variable to "PM"; otherwise, it sets it to "AM".
+
+The function then calculates a formatted hour value that is in the range of 1 to 12, rather than 0 to 23. If the formatted hour value is zero, it is set to 12. This is because there is no 0 o'clock in the 12-hour clock system.
+
+The function then calculates the formatted minute and second values. If they are less than 10, a leading zero is added to them to ensure they are always displayed with two digits.
+
+The function creates a formatted time string that includes the formatted hour, minute, and second values, as well as the AM or PM indicator. This formatted time string is set as the text content of the digitalClock element using the textContent property.
+
+Finally, I used "setInterval()" method that repeatedly calls "updateClock()" function at a specified interval of 1000 milliseconds (1 second).
